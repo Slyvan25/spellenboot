@@ -1,0 +1,14 @@
+{
+    "app_name" : "SpellenBoot",
+    "app_author" : "Silvan Paul",
+    "app_version" : "0.0.1",
+    "app_motto" : "De nieuwste en beste spelletjes voor jou!",
+    "app_url" : "http://localhost",
+    "app_port" : "8080",
+    
+    "devmode" : false,
+    "database_name" : "",
+    "database_host" : "127.0.0.1",
+    "database_user" : "root",
+    "database_pass" : ""
+}

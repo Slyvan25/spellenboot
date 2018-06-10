@@ -1,0 +1,27 @@
+{
+  "name": "spellenboot",
+  "version": "1.0.0",
+  "description": "A game site for kids",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slyvan25/spellenboot.git"
+  },
+  "keywords": [
+    "gamesite"
+  ],
+  "author": "Silvan Paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slyvan25/spellenboot/issues"
+  },
+  "homepage": "https://github.com/Slyvan25/spellenboot#readme"
+}
