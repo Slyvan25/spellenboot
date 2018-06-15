@@ -13,6 +13,7 @@ nav{
     box-shadow: #19A5BE 0 6px 0px;
     color: #fff;
     flex-wrap: wrap;
+    margin-bottom: 6px;
 }
 
 nav img{
@@ -50,4 +51,21 @@ nav *{
     border: solid #DAEDF3;
     color: #DAEDF3;
     text-decoration: none;
+}
+
+.left{
+    width: 25%;
+}
+
+.center{
+    width: 50%;
+}
+
+.right{
+    width: 25%;
+}
+
+.container-wrapper{
+    display: flex;
+    flex-direction: row;
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <%= gamename %>
+        
+        <!-- game frame maybe new lib when html5 is more populair then that stupid flash -->
+        <embed id="gameframe" width="800" height="600" src="" type="application/x-shockwave-flash"></embed>
+
+
+        <script>
+               
+                let path = "../games/" + "<%= src_name %>";
+                document.getElementById("gameframe").src = path;
+            </script>
+        
+</body>
+</html>/

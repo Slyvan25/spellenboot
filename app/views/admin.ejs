@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= sitetitle %> : Administrator Panel></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- important!!!! LOGIN SYSTEM!!! -->
+
+    <form action="/upload" enctype="multipart/form-data" method="post">
+        Gametitle:<input type="text" name="gametitle">
+        <br>
+        Game Description:<input type="text" name="gamedescription">
+        <hr>
+        Upload game here:
+        <br>
+        <input type="text" name="title">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

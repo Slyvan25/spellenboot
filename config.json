@@ -5,10 +5,11 @@
     "app_motto" : "De nieuwste en beste spelletjes voor jou!",
     "app_url" : "http://localhost",
     "app_port" : "8080",
+    "analytics_id" : "UA-120623537-1",
     
-    "devmode" : false,
-    "database_name" : "",
-    "database_host" : "127.0.0.1",
+    "devmode" : true,
+    "database_name" : "spellenboot",
+    "database_host" : "86.86.171.165",
     "database_user" : "root",
-    "database_pass" : ""
+    "database_pass" : "QWERTY123"
 }
