@@ -35,19 +35,26 @@ app.get("/", function(req, res){
 
 //game page loads in game dynamicly
 app.get('/game/:id', function(req, res) {
-    for (let i = 0; i < list.length; i++) {
+	let game = getGameInfo(req.params.id);
+	if (!game) {// game not found
+		console.log("404 game not found :)))");
+		res.status(404).send('Sorry, we can not find that game in our special database of magicness, if you think this is an error, please file a report on our overlord slyvan.');
+		return;
+	}
+    res.render('game',{
+        "game" : game
+    })
+})
+
+function getGameInfo(gameID) {
+	for (let i = 0; i < list.length; i++) {
         let game = list[i];
-        if (game.id == req.params.id) {
+        if (game.id == gameID) {
             return game;    
         }
     }
-    
-
-    res.render('game',{
-        "gamename" : req.params.id,
-        "src_name" : game
-    })
-})
+	return null;
+}
 
 app.get("/admin", function(req, res){
     res.render("admin",{

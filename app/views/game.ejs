@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Game - <%= game.name %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-        <%= gamename %>
-        
-        <!-- game frame maybe new lib when html5 is more populair then that stupid flash -->
-        <embed id="gameframe" width="800" height="600" src="" type="application/x-shockwave-flash"></embed>
-
-
-        <script>
-               
-                let path = "../games/" + "<%= src_name %>";
-                document.getElementById("gameframe").src = path;
-            </script>
-        
+	<h1><%= game.name %></h1>
+    
+	<!-- game frame maybe new lib when html5 is more populair then that stupid flash -->
+	<embed id="gameframe" width="800" height="600" src="<%= game.src_name %>" type="application/x-shockwave-flash"></embed> 
+	<script>
+	/* Global Variables */
+	var g_gameinfo = <%- JSON.stringify(game) %>;
+	</script>
 </body>
-</html>/
+</html>
