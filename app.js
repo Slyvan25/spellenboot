@@ -26,10 +26,14 @@ app.use(express.static(path.join(__dirname, "js")));
 
 //web server
 app.get("/", function(req, res){
+    let i = 0;
+    game = list[i++];
     res.render("index",{
         sitetitle: conf.app_name,
         sitemotto: conf.app_motto,
         analytics_id: conf.analytics_id,
+        games : game,
+        list : list
     })
 })
 
@@ -50,11 +54,13 @@ function getGameInfo(gameID) {
 	for (let i = 0; i < list.length; i++) {
         let game = list[i];
         if (game.id == gameID) {
-            return game;    
+            return game;
         }
     }
 	return null;
 }
+
+
 
 app.get("/admin", function(req, res){
     res.render("admin",{

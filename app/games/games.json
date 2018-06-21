@@ -3,15 +3,26 @@
         "id" : 1,
         "name" : "pacman",
         "src_name" : "pacman-flash.swf",
+        "desc" : "Pac-Man is een klassiek computerspel, voor het eerst uitgebracht als arcadespel op 22 mei 1980. Het spel is ontwikkeld door Namco. Binnen een jaar werden honderdduizend arcademachines verkocht. Het is daarmee een van de succesvolste computerspellen aller tijden, en staat nu voor jou beschrikbaar hier op de spellenboot!",
         "category" : "Arcade",
         "tumbnail" : "",
         "type" : "Flash"
     },
     {
         "id" : 2,
-        "name" : "hi",
-        "src_name" : "pacman-flash.swf",
-        "category" : "Arcade",
+        "name" : "3 vs 3 hockey",
+        "src_name" : "3_on_3_hockey.swf",
+        "desc" : "Heb je bijvoorbeeld niks met voetbal maar vind je hockey helemaal tegek?! dan is 3 vs 3 hockey perfect voor jou! speel tegen 3 andere spelers en win zoveel mogelijk rondes.",
+        "category" : "Sport",
+        "tumbnail" : "",
+        "type" : "Flash"
+    },
+    {
+        "id" : 3,
+        "name" : "3 vs 3 hockey",
+        "src_name" : "3_on_3_hockey.swf",
+        "desc" : "Heb je bijvoorbeeld niks met voetbal maar vind je hockey helemaal tegek?! dan is 3 vs 3 hockey perfect voor jou! speel tegen 3 andere spelers en win zoveel mogelijk rondes.",
+        "category" : "Sport",
         "tumbnail" : "",
         "type" : "Flash"
     }

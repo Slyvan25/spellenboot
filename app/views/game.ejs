@@ -4,13 +4,27 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Game - <%= game.name %></title>
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<h1><%= game.name %></h1>
-    
-	<!-- game frame maybe new lib when html5 is more populair then that stupid flash -->
-	<embed id="gameframe" width="800" height="600" src="<%= game.src_name %>" type="application/x-shockwave-flash"></embed> 
+
+<% include ./parts/nav %>
+	<h1></h1>
+	<div class="container-wrapper">
+		<div class="side">
+
+		</div>
+		<div class="gameframe-wrapper">	
+				<h3><%= game.name %></h3>
+			<!-- game frame maybe new lib when html5 is more populair then that stupid flash -->
+			<embed id="gameframe" width="800" height="600" src="../games/<%= game.src_name %>" type="application/x-shockwave-flash"></embed>
+		</div>
+		<div class="side">
+			
+		</div>
+	</div>	
 	<script>
 	/* Global Variables */
 	var g_gameinfo = <%- JSON.stringify(game) %>;

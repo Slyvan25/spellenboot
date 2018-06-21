@@ -24,6 +24,20 @@ nav *{
     margin-right: 2%;
 }
 
+grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+}
+
+gamelist{
+    display: block;
+    height: 10vw;
+    box-shadow: black 0 0 0 0;
+    color: #fff;
+    width: 100%;
+}
+
 .nav-start{
     display: flex;
     flex-grow: 1;
@@ -68,4 +82,35 @@ nav *{
 .container-wrapper{
     display: flex;
     flex-direction: row;
+}
+
+@media only screen and (min-width: 600px){
+    .side{
+        display:block;
+        width: 12vw;
+    }
+
+    .gameframe-wrapper{
+        margin: auto;
+        background-color: #002D42;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .side{
+        width: auto;
+    }
+
+    .gameframe-wrapper{
+        margin: 0;
+    }
+}
+
+#gameframe{
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
 }
