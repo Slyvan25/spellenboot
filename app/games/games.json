@@ -25,5 +25,14 @@
         "category" : "Sport",
         "tumbnail" : "",
         "type" : "Flash"
+    },
+    {
+        "id" : 4,
+        "name" : "Mario",
+        "src_name" : "dagobah_super_mario_flash.swf",
+        "desc" : "is een videospel-personage, ontwikkeld door de Japanse gamedesigner Shigeru Miyamoto, en wordt gezien als de mascotte van Nintendo. Mario heeft al in meer dan 200 videospellen een rol gespeeld sinds hij werd ontwikkeld en hoewel hij eigenlijk alleen in platformspellen verscheen, verschijnt hij tegenwoordig in allerlei soorten spellen, zoals racegames, puzzelspellen, role-playing games, vechtgames, sportgames en vele anderen soorten spellen, en staat nu voor jou beschrikbaar hier op de spellenboot!",
+        "category" : "Arcade",
+        "tumbnail" : "",
+        "type" : "Flash"
     }
 ]

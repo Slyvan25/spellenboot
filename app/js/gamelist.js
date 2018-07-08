@@ -1,3 +1,8 @@
+//prints image to webconsole so those sneaky wanna be hack people know shit is serious
+console.log('%c       ', 'font-size: 100px; background: url("https://spellenboot.nl/img/logo.png") no-repeat; background-size: calc(100% - 12.5%); margin-left: 40%; margin-right: 40%;');
+console.log('%c' + 'if you are reading this you most likely are a developer or an wanna be hacker. please dont use this console it will not give you extra permissions or anything.', 'color: #64bed8; margin-left: 25%; margin-right: 25%;');
+
+//loads in the json file
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -23,21 +28,31 @@ readTextFile("../games/games.json", function(gamelist_json){
 
     let gamelist = document.getElementById("gamelist");
 
-    let i;
+    /**
+     *
+     * Catagory Loading
+     *  
+     */
 
-    if(gamelist.hasAttribute("arcade"))
-    {
+     //Arcade
+    if(gamelist.hasAttribute("arcade")){
         let filtered_json = find_in_object(JSON.parse(gamelist_json), {category: 'Arcade'});
-        gamelist.style.backgroundColor = "#002d42";
-        
-        console.log(filtered_json);
-
+        //gamelist.style.backgroundColor = "#002d42";   - old
+        for (let i = 0; i < filtered_json.length; i++) {
+            let game = filtered_json[i];
+            console.log("ARCADE::" + game.name + " loaded in to the site.");
+            gamelist.innerHTML += "<a href='/game/"+ game.id +"'><img src='" + "/games/thumbnails/" +game.name + ".png" +"'></a>";
+        }
     }
-    if(gamelist.hasAttribute("sport"))
-    {
+
+    if(gamelist.hasAttribute("sport")){
         let filtered_json = find_in_object(JSON.parse(gamelist_json), {category: 'Sport'});
-        gamelist.style.backgroundColor = "#002d42";
-        console.log(filtered_json);
+        //gamelist.style.backgroundColor = "#002d42";   - old
+        for (let i = 0; i < filtered_json.length; i++) {
+            let game = filtered_json[i];
+            console.log("Sport::" + game.name + " loaded in to the site.");
+            gamelist.innerHTML += "<a href='/game/"+ game.id +"'><img src='" + "/games/thumbnails/" +game.name + ".png" +"'></a>";
+        }
     }
 });
 

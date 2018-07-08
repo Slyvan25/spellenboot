@@ -24,18 +24,18 @@ nav *{
     margin-right: 2%;
 }
 
-grid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 5px;
-}
-
 gamelist{
     display: block;
     height: 10vw;
     box-shadow: black 0 0 0 0;
     color: #fff;
     width: 100%;
+}
+
+gamelist > a > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .nav-start{
@@ -81,7 +81,7 @@ gamelist{
 
 .container-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 @media only screen and (min-width: 600px){
