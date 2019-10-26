@@ -3,7 +3,6 @@ const app = express()
 const ejs = require('ejs')
 const mysql = require('mysql');
 
-
 const formidable = require('formidable');
 const fs = require('fs');
 const path = require('path');
@@ -15,7 +14,6 @@ const cmd = require('./cmd.js')
 //json
 const conf = require('./config.json');
 const list = require('./app/games/games.json')
-
 
 // sets template engine and path
 app.set('view engine', 'ejs');
@@ -61,7 +59,6 @@ function getGameInfo(gameID) {
 }
 
 
-
 app.get("/admin", function(req, res){
     res.render("admin",{
         
@@ -69,7 +66,6 @@ app.get("/admin", function(req, res){
         sitemotto: conf.app_motto,
     })
 })
-
 
 //port number (if using iis use: process.env.PORT)
 app.listen(conf.app_port);
